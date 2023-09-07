@@ -1,0 +1,9 @@
+alarm_name          = "test-RDS"
+comparison_operator = "GreaterThanOrEqualToThreshold"
+evaluation_periods  = 2
+threshold           = 50
+period              = 30
+namespace           = "AWS/RDS"
+metric_name         = ["CPUUtilization", "ReadIOPS"]
+statistic           = "Maximum"
+service_name        = "afis-api-test"

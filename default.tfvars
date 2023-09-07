@@ -1,0 +1,11 @@
+alarm_name          = "EC2_CPU_Usage"
+comparison_operator = "GreaterThanOrEqualToThreshold"
+evaluation_periods  = 2
+threshold           = 70
+period              = 60
+unit                = "Count"
+namespace           = "AWS/EC2"
+metric_name         = ["CPUUtilization"]
+statistic           = "Average"
+service_type        = "DBInstanceIdentifier"
+service_name        = "afis-api-test"
